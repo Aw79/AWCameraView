@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 	s.name = 'AWCameraView'
-	s.version = '0.5.0'
+	s.version = '0.5.1'
 	s.summary = 'UIView to show the camera, take a picture, preview it, return UIImage'
 	s.homepage = 'https://github.com/Aw79/AWCameraView'
 	s.license = 'MIT'

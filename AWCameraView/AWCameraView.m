@@ -171,11 +171,26 @@
     }
     
     if (status != AVAuthorizationStatusAuthorized) {
-        [[[UIAlertView alloc] initWithTitle:@"Camera Required"
-                                    message:@"To continue, you must allow access to the camera."
-                                   delegate:self
-                          cancelButtonTitle:@"Try Again"
-                          otherButtonTitles:@"Settings", nil] show];
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Camera Required"
+                                                                       message:@"To continue, you must allow access to the camera."
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction* cancelAction = [UIAlertAction actionWithTitle:@"Try Again"
+                                                               style:UIAlertActionStyleDefault
+                                                             handler:^(UIAlertAction * action) {
+                                                                 [self setPosition:self.position];
+                                                             }];
+        [alert addAction:cancelAction];
+
+        UIAlertAction* settingsAction = [UIAlertAction actionWithTitle:@"Settings"
+                                                                 style:UIAlertActionStyleDefault
+                                                               handler:^(UIAlertAction * action) {
+                                                                   [[UIApplication sharedApplication]
+                                                                    openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+                                                               }];
+        [alert addAction:settingsAction];
+        
+        [[self.delegate parentViewController] presentViewController:alert animated:NO completion:nil];
+
         return;
     }
     
