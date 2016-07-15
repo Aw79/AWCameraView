@@ -13,7 +13,6 @@ build/
 *.mode2v3
 *.perspectivev3
 xcuserdata
-*.xcworkspace
 *.moved-aside
 
 # Defaults
@@ -25,3 +24,4 @@ xcuserdata
 # CocoaPods
 Pods/
 Podfile.lock
+AWCameraView.xcodeproj/project.xcworkspace
