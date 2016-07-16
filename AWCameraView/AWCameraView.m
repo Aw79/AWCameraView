@@ -189,7 +189,7 @@
                                                                }];
         [alert addAction:settingsAction];
         
-        [[self.delegate parentViewController] presentViewController:alert animated:NO completion:nil];
+        [self.delegate presentViewController:alert animated:NO completion:nil];
 
         return;
     }

@@ -22,8 +22,6 @@
 /// Called if an error occurs while picture is being captured
 - (void)cameraView:(AWCameraView *)cameraView didErrorOnTakePicture:(NSError *)error;
 
-- (UIViewController *)parentViewController;
-
 @optional
 
 /// Called to allow customization of the underlying AVCaptureConnection

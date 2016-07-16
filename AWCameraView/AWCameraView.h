@@ -15,7 +15,7 @@
 @interface AWCameraView : UIView
 
 /// Delegate for receiving events
-@property (weak, nonatomic) IBOutlet id <AWCameraViewDelegate> delegate;
+@property (weak, nonatomic) IBOutlet UIViewController<AWCameraViewDelegate> *delegate;
 
 /// The camera-position being used - front or back; defaults to back
 @property (assign, nonatomic) AWCameraViewPosition position;
