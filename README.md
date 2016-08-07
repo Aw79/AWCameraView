@@ -22,7 +22,7 @@ pod 'AWCameraView'
 ### Interface Builder
 
 * Drag a UIView into the interface and set its type to `AWCameraView`
-* Set its delegate to a class that implements `AWCameraViewDelegate`
+* Set its delegate to a `UIViewController` that implements `AWCameraViewDelegate`
 * Set the preferred camera position (will failover to the other one)
 * Call `takePicture` on `AWCameraView` to receive the UIImage on your delegate
 * Enable focus and exposure by setting `enableFocusOnTap`on `AWCameraView` or
