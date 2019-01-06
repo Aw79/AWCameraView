@@ -15,5 +15,8 @@ FOUNDATION_EXPORT double AWCameraViewVersionNumber;
 FOUNDATION_EXPORT const unsigned char AWCameraViewVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <AWCameraView/PublicHeader.h>
-<AWCameraView/AWCameraViewDelegate.h>
 
+#import <AWCameraView/AWCameraPublic.h>
+#import <AWCameraView/AWCameraDelegate.h>
+#import <AWCameraView/AWCameraPosition.h>
+#import <AWCameraView/AWCameraViewCaptureConnectionType.h>
