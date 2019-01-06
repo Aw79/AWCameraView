@@ -12,7 +12,6 @@
 		7AD8741B21E27F790039277E /* AWCameraView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AD8740D21E27F790039277E /* AWCameraView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7AD8742321E27FF70039277E /* AWCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFD0ACD1789816200DF1A90 /* AWCameraView.m */; };
 		7AD8742F21E2A6600039277E /* AWCameraViewCaptureConnectionType.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A5F20941CBD875800182EF3 /* AWCameraViewCaptureConnectionType.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7AD8743021E2A8360039277E /* AWCameraViewPublic.h in Headers */ = {isa = PBXBuildFile; fileRef = BDFD0ACC1789816200DF1A90 /* AWCameraViewPublic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7AD8743121E2A83D0039277E /* AWCameraViewPosition.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A0D67E41B8C847F00CCF7A5 /* AWCameraViewPosition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7AD8743221E2A8430039277E /* AWCameraViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A0D67E51B8C84A900CCF7A5 /* AWCameraViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -41,7 +40,6 @@
 		BDBD0B571789A265003A7B23 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		BDBD0B5A1789A28D003A7B23 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		BDFD0A921789800700DF1A90 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		BDFD0ACC1789816200DF1A90 /* AWCameraViewPublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWCameraViewPublic.h; sourceTree = "<group>"; };
 		BDFD0ACD1789816200DF1A90 /* AWCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWCameraView.m; sourceTree = "<group>"; };
 		BDFD0AD2178981A800DF1A90 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BDFD0AD4178981AE00DF1A90 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -70,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				7AD8740D21E27F790039277E /* AWCameraView.h */,
-				BDFD0ACC1789816200DF1A90 /* AWCameraViewPublic.h */,
 				BDFD0ACD1789816200DF1A90 /* AWCameraView.m */,
 				1A0D67E41B8C847F00CCF7A5 /* AWCameraViewPosition.h */,
 				1A0D67E51B8C84A900CCF7A5 /* AWCameraViewDelegate.h */,
@@ -131,7 +128,6 @@
 				7AD8743221E2A8430039277E /* AWCameraViewDelegate.h in Headers */,
 				7AD8741B21E27F790039277E /* AWCameraView.h in Headers */,
 				7AD8743121E2A83D0039277E /* AWCameraViewPosition.h in Headers */,
-				7AD8743021E2A8360039277E /* AWCameraViewPublic.h in Headers */,
 				7AD8742F21E2A6600039277E /* AWCameraViewCaptureConnectionType.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

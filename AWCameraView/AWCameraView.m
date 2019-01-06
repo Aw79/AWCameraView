@@ -7,7 +7,7 @@
 //  Copyright (c) 2013 www.verylargebox.com
 //
 
-#import "AWCameraViewPublic.h"
+#import <AWCameraView/AWCameraView.h>
 #import <AVFoundation/AVFoundation.h>
 
 @interface AWCameraView () <UIAlertViewDelegate, UIGestureRecognizerDelegate>
