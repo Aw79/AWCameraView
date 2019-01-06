@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 	s.name = 'AWCameraView'
-	s.version = '0.5.1'
+	s.version = '0.6.0'
 	s.summary = 'UIView to show the camera, take a picture, preview it, return UIImage'
 	s.homepage = 'https://github.com/Aw79/AWCameraView'
 	s.license = 'MIT'
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 	s.source = { git: 'https://github.com/Aw79/AWCameraView.git', tag: "#{s.version}" }
 
 	s.requires_arc = true
-	s.ios.deployment_target = '6.0'
+	s.ios.deployment_target = '9.0'
 
 	s.source_files = 'AWCameraView/*.{h,m}'
 	s.public_header_files = 'AWCameraView/*.h'

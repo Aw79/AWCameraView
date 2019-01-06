@@ -8,7 +8,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AWCameraView/AWCameraViewCaptureConnectionType.h>
+#import "AWCameraViewCaptureConnectionType.h"
 
 @class AWCameraView;
 @class AVCaptureConnection;

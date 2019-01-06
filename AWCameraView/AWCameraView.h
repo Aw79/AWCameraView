@@ -1,36 +1,19 @@
 //
-// 	AWCameraView.h
+//  AWCameraView.h
 //  AWCameraView
 //
-//  Created by Markos Charatzas on 25/06/2013.
-//  Copyright (c) 2015 Cuvva Limited
-//  Copyright (c) 2013 www.verylargebox.com
+//  Created by Andreas Wörner on 06.01.19.
+//  Copyright © 2019 aw. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import <AWCameraView/AWCameraViewPosition.h>
-#import <AWCameraView/AWCameraViewDelegate.h>
 
-/// UIView to show the camera, take a picture, preview it, return UIImage
-@interface AWCameraView : UIView
+//! Project version number for AWCameraView_Framework.
+FOUNDATION_EXPORT double AWCameraView_FrameworkVersionNumber;
 
-/// Delegate for receiving events
-@property (weak, nonatomic) IBOutlet UIViewController<AWCameraViewDelegate> *delegate;
+//! Project version string for AWCameraView_Framework.
+FOUNDATION_EXPORT const unsigned char AWCameraView_FrameworkVersionString[];
 
-/// The camera-position being used - front or back; defaults to back
-@property (assign, nonatomic) AWCameraViewPosition position;
+// In this header, you should import all the public headers of your framework using statements like #import <AWCameraView_Framework/PublicHeader.h>
 
-/// If enabled, focus the camera-view on the position of the tap
-/// Disabled by default
-@property (assign, nonatomic) BOOL enableFocusOnTap;
 
-/// Takes a still image of the current frame from the video feed
-- (void)takePicture;
-
-/// Restart the session
-- (void)retakePicture;
-
-/// Focus on Point
-- (void)focusOnPoint:(CGPoint)point;
-
-@end

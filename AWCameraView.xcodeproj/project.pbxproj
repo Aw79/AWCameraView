@@ -3,58 +3,98 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A0D67E71B8C85CE00CCF7A5 /* AWCameraView.h in Headers */ = {isa = PBXBuildFile; fileRef = BDFD0ACC1789816200DF1A90 /* AWCameraView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A0D67E81B8C85CE00CCF7A5 /* AWCameraViewPosition.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A0D67E41B8C847F00CCF7A5 /* AWCameraViewPosition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A0D67E91B8C85CE00CCF7A5 /* AWCameraViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A0D67E51B8C84A900CCF7A5 /* AWCameraViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7A5F20951CBD875D00182EF3 /* AWCameraViewCaptureConnectionType.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A5F20941CBD875800182EF3 /* AWCameraViewCaptureConnectionType.h */; };
-		BDBD0B591789A26E003A7B23 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDBD0B571789A265003A7B23 /* CoreGraphics.framework */; };
-		BDBD0B5B1789A28D003A7B23 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDBD0B5A1789A28D003A7B23 /* CoreMedia.framework */; };
-		BDFD0A931789800700DF1A90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDFD0A921789800700DF1A90 /* Foundation.framework */; };
-		BDFD0AD11789816B00DF1A90 /* AWCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFD0ACD1789816200DF1A90 /* AWCameraView.m */; };
-		BDFD0AD3178981A800DF1A90 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDFD0AD2178981A800DF1A90 /* UIKit.framework */; };
-		BDFD0AD5178981AE00DF1A90 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDFD0AD4178981AE00DF1A90 /* AVFoundation.framework */; };
+		7AD8741421E27F790039277E /* AWCameraView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD8740B21E27F790039277E /* AWCameraView.framework */; };
+		7AD8741921E27F790039277E /* AWCameraViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD8741821E27F790039277E /* AWCameraViewTests.m */; };
+		7AD8741B21E27F790039277E /* AWCameraView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AD8740D21E27F790039277E /* AWCameraView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7AD8742221E27FF70039277E /* AWCameraViewPublic.h in Sources */ = {isa = PBXBuildFile; fileRef = BDFD0ACC1789816200DF1A90 /* AWCameraViewPublic.h */; };
+		7AD8742321E27FF70039277E /* AWCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFD0ACD1789816200DF1A90 /* AWCameraView.m */; };
+		7AD8742421E27FF70039277E /* AWCameraViewPosition.h in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D67E41B8C847F00CCF7A5 /* AWCameraViewPosition.h */; };
+		7AD8742521E27FF70039277E /* AWCameraViewDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D67E51B8C84A900CCF7A5 /* AWCameraViewDelegate.h */; };
+		7AD8742621E27FF70039277E /* AWCameraViewCaptureConnectionType.h in Sources */ = {isa = PBXBuildFile; fileRef = 7A5F20941CBD875800182EF3 /* AWCameraViewCaptureConnectionType.h */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7AD8741521E27F790039277E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDFD0A871789800700DF1A90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AD8740A21E27F790039277E;
+			remoteInfo = "AWCameraView-Framework";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1A0D67E41B8C847F00CCF7A5 /* AWCameraViewPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWCameraViewPosition.h; sourceTree = "<group>"; };
 		1A0D67E51B8C84A900CCF7A5 /* AWCameraViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWCameraViewDelegate.h; sourceTree = "<group>"; };
 		1ABD19441C32D71A00869D72 /* AWCameraView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AWCameraView.podspec; sourceTree = "<group>"; };
 		7A5F20941CBD875800182EF3 /* AWCameraViewCaptureConnectionType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWCameraViewCaptureConnectionType.h; sourceTree = "<group>"; };
+		7AD8740B21E27F790039277E /* AWCameraView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AWCameraView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AD8740D21E27F790039277E /* AWCameraView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWCameraView.h; sourceTree = "<group>"; };
+		7AD8740E21E27F790039277E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AD8741321E27F790039277E /* AWCameraViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AWCameraViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AD8741821E27F790039277E /* AWCameraViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWCameraViewTests.m; sourceTree = "<group>"; };
+		7AD8741A21E27F790039277E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDBD0B571789A265003A7B23 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		BDBD0B5A1789A28D003A7B23 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		BDFD0A8F1789800700DF1A90 /* libAWCameraView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAWCameraView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFD0A921789800700DF1A90 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		BDFD0ACC1789816200DF1A90 /* AWCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWCameraView.h; sourceTree = "<group>"; };
+		BDFD0ACC1789816200DF1A90 /* AWCameraViewPublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWCameraViewPublic.h; sourceTree = "<group>"; };
 		BDFD0ACD1789816200DF1A90 /* AWCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWCameraView.m; sourceTree = "<group>"; };
 		BDFD0AD2178981A800DF1A90 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BDFD0AD4178981AE00DF1A90 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BDFD0A8C1789800700DF1A90 /* Frameworks */ = {
+		7AD8740821E27F790039277E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDBD0B5B1789A28D003A7B23 /* CoreMedia.framework in Frameworks */,
-				BDBD0B591789A26E003A7B23 /* CoreGraphics.framework in Frameworks */,
-				BDFD0AD5178981AE00DF1A90 /* AVFoundation.framework in Frameworks */,
-				BDFD0A931789800700DF1A90 /* Foundation.framework in Frameworks */,
-				BDFD0AD3178981A800DF1A90 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD8741021E27F790039277E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AD8741421E27F790039277E /* AWCameraView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7AD8740C21E27F790039277E /* AWCameraView */ = {
+			isa = PBXGroup;
+			children = (
+				7AD8740D21E27F790039277E /* AWCameraView.h */,
+				BDFD0ACC1789816200DF1A90 /* AWCameraViewPublic.h */,
+				BDFD0ACD1789816200DF1A90 /* AWCameraView.m */,
+				1A0D67E41B8C847F00CCF7A5 /* AWCameraViewPosition.h */,
+				1A0D67E51B8C84A900CCF7A5 /* AWCameraViewDelegate.h */,
+				7A5F20941CBD875800182EF3 /* AWCameraViewCaptureConnectionType.h */,
+				7AD8740E21E27F790039277E /* Info.plist */,
+			);
+			path = AWCameraView;
+			sourceTree = "<group>";
+		};
+		7AD8741721E27F790039277E /* AWCameraViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				7AD8741821E27F790039277E /* AWCameraViewTests.m */,
+				7AD8741A21E27F790039277E /* Info.plist */,
+			);
+			path = AWCameraViewTests;
+			sourceTree = "<group>";
+		};
 		BDFD0A861789800700DF1A90 = {
 			isa = PBXGroup;
 			children = (
 				1ABD19441C32D71A00869D72 /* AWCameraView.podspec */,
-				BDFD0A941789800700DF1A90 /* AWCameraView */,
+				7AD8740C21E27F790039277E /* AWCameraView */,
+				7AD8741721E27F790039277E /* AWCameraViewTests */,
 				BDFD0A911789800700DF1A90 /* Frameworks */,
 				BDFD0A901789800700DF1A90 /* Products */,
 			);
@@ -63,7 +103,8 @@
 		BDFD0A901789800700DF1A90 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BDFD0A8F1789800700DF1A90 /* libAWCameraView.a */,
+				7AD8740B21E27F790039277E /* AWCameraView.framework */,
+				7AD8741321E27F790039277E /* AWCameraViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,51 +121,55 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BDFD0A941789800700DF1A90 /* AWCameraView */ = {
-			isa = PBXGroup;
-			children = (
-				BDFD0ACC1789816200DF1A90 /* AWCameraView.h */,
-				BDFD0ACD1789816200DF1A90 /* AWCameraView.m */,
-				1A0D67E41B8C847F00CCF7A5 /* AWCameraViewPosition.h */,
-				1A0D67E51B8C84A900CCF7A5 /* AWCameraViewDelegate.h */,
-				7A5F20941CBD875800182EF3 /* AWCameraViewCaptureConnectionType.h */,
-			);
-			path = AWCameraView;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1A0D67E61B8C85C600CCF7A5 /* Headers */ = {
+		7AD8740621E27F790039277E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A0D67E71B8C85CE00CCF7A5 /* AWCameraView.h in Headers */,
-				7A5F20951CBD875D00182EF3 /* AWCameraViewCaptureConnectionType.h in Headers */,
-				1A0D67E81B8C85CE00CCF7A5 /* AWCameraViewPosition.h in Headers */,
-				1A0D67E91B8C85CE00CCF7A5 /* AWCameraViewDelegate.h in Headers */,
+				7AD8741B21E27F790039277E /* AWCameraView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		BDFD0A8E1789800700DF1A90 /* AWCameraView */ = {
+		7AD8740A21E27F790039277E /* AWCameraView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BDFD0AB41789800800DF1A90 /* Build configuration list for PBXNativeTarget "AWCameraView" */;
+			buildConfigurationList = 7AD8742021E27F790039277E /* Build configuration list for PBXNativeTarget "AWCameraView" */;
 			buildPhases = (
-				BDFD0A8B1789800700DF1A90 /* Sources */,
-				BDFD0A8C1789800700DF1A90 /* Frameworks */,
-				1A0D67E61B8C85C600CCF7A5 /* Headers */,
+				7AD8740621E27F790039277E /* Headers */,
+				7AD8740721E27F790039277E /* Sources */,
+				7AD8740821E27F790039277E /* Frameworks */,
+				7AD8740921E27F790039277E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = AWCameraView;
-			productName = JBCameraView;
-			productReference = BDFD0A8F1789800700DF1A90 /* libAWCameraView.a */;
-			productType = "com.apple.product-type.library.static";
+			productName = "AWCameraView-Framework";
+			productReference = 7AD8740B21E27F790039277E /* AWCameraView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7AD8741221E27F790039277E /* AWCameraViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AD8742121E27F790039277E /* Build configuration list for PBXNativeTarget "AWCameraViewTests" */;
+			buildPhases = (
+				7AD8740F21E27F790039277E /* Sources */,
+				7AD8741021E27F790039277E /* Frameworks */,
+				7AD8741121E27F790039277E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AD8741621E27F790039277E /* PBXTargetDependency */,
+			);
+			name = AWCameraViewTests;
+			productName = "AWCameraView-FrameworkTests";
+			productReference = 7AD8741321E27F790039277E /* AWCameraViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -135,9 +180,17 @@
 				LastTestingUpgradeCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = aw;
+				TargetAttributes = {
+					7AD8740A21E27F790039277E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					7AD8741221E27F790039277E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
 			};
 			buildConfigurationList = BDFD0A8A1789800700DF1A90 /* Build configuration list for PBXProject "AWCameraView" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -148,23 +201,293 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BDFD0A8E1789800700DF1A90 /* AWCameraView */,
+				7AD8740A21E27F790039277E /* AWCameraView */,
+				7AD8741221E27F790039277E /* AWCameraViewTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		7AD8740921E27F790039277E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD8741121E27F790039277E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		BDFD0A8B1789800700DF1A90 /* Sources */ = {
+		7AD8740721E27F790039277E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDFD0AD11789816B00DF1A90 /* AWCameraView.m in Sources */,
+				7AD8742221E27FF70039277E /* AWCameraViewPublic.h in Sources */,
+				7AD8742321E27FF70039277E /* AWCameraView.m in Sources */,
+				7AD8742421E27FF70039277E /* AWCameraViewPosition.h in Sources */,
+				7AD8742521E27FF70039277E /* AWCameraViewDelegate.h in Sources */,
+				7AD8742621E27FF70039277E /* AWCameraViewCaptureConnectionType.h in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD8740F21E27F790039277E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AD8741921E27F790039277E /* AWCameraViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7AD8741621E27F790039277E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AD8740A21E27F790039277E /* AWCameraView */;
+			targetProxy = 7AD8741521E27F790039277E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		7AD8741C21E27F790039277E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XT3PL4JY86;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = AWCameraView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.andreas-woerner.AWCameraView";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7AD8741D21E27F790039277E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XT3PL4JY86;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = AWCameraView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.andreas-woerner.AWCameraView";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7AD8741E21E27F790039277E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = XT3PL4JY86;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = AWCameraViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.andreas-woerner.AWCameraViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7AD8741F21E27F790039277E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = XT3PL4JY86;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = AWCameraViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.andreas-woerner.AWCameraViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		BDFD0AB21789800800DF1A90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -185,7 +508,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
@@ -205,46 +528,39 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		BDFD0AB51789800800DF1A90 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = AWCameraView;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		BDFD0AB61789800800DF1A90 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = AWCameraView;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7AD8742021E27F790039277E /* Build configuration list for PBXNativeTarget "AWCameraView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AD8741C21E27F790039277E /* Debug */,
+				7AD8741D21E27F790039277E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AD8742121E27F790039277E /* Build configuration list for PBXNativeTarget "AWCameraViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AD8741E21E27F790039277E /* Debug */,
+				7AD8741F21E27F790039277E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BDFD0A8A1789800700DF1A90 /* Build configuration list for PBXProject "AWCameraView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BDFD0AB21789800800DF1A90 /* Debug */,
 				BDFD0AB31789800800DF1A90 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BDFD0AB41789800800DF1A90 /* Build configuration list for PBXNativeTarget "AWCameraView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BDFD0AB51789800800DF1A90 /* Debug */,
-				BDFD0AB61789800800DF1A90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
