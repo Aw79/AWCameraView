@@ -92,6 +92,11 @@
 }
 
 - (void)takePicture {
+    if (!self.stillImageConnection.isEnabled) {
+        NSLog(@"Abort 'takePicture' since connection is not enabled");
+        return;
+    }
+
     __weak AWCameraView *weakSelf = self;
     
     [self.stillImageOutput
@@ -100,7 +105,7 @@
          [weakSelf.session stopRunning];
          
          if (error) {
-             [self.delegate cameraView:weakSelf didErrorOnTakePicture:error];
+             [weakSelf.delegate cameraView:weakSelf didErrorOnTakePicture:error];
              return;
          }
          
@@ -109,7 +114,7 @@
          CFDictionaryRef attachments = CMCopyDictionaryOfAttachments(kCFAllocatorDefault, sampleBuffer, kCMAttachmentMode_ShouldPropagate);
          NSDictionary *info = CFBridgingRelease(attachments);
          
-         [self.delegate cameraView:weakSelf didFinishTakingPicture:image withInfo:info];
+         [weakSelf.delegate cameraView:weakSelf didFinishTakingPicture:image withInfo:info];
          
          dispatch_async(dispatch_get_main_queue(), ^{
              weakSelf.preview.image = image;
@@ -118,9 +123,10 @@
 }
 
 - (void)retakePicture {
+    __weak AWCameraView *weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-        self.preview.image = nil;
-        [self.session startRunning];
+        weakSelf.preview.image = nil;
+        [weakSelf.session startRunning];
     });
 }
 
@@ -148,24 +154,15 @@
     
 }
 
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    if (buttonIndex == alertView.cancelButtonIndex) {
-        [self setPosition:self.position];
-    }
-    
-    if (buttonIndex == alertView.firstOtherButtonIndex) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
-    }
-}
-
 - (void)setPosition:(AWCameraViewPosition)position {
     _position = position;
     
     AVAuthorizationStatus status = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
     
     if (status == AVAuthorizationStatusNotDetermined) {
+        __weak AWCameraView *weakSelf = self;
         [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
-            [self setPosition:self.position];
+            [weakSelf setPosition:weakSelf.position];
         }];
         return;
     }
@@ -174,18 +171,25 @@
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Camera Required"
                                                                        message:@"To continue, you must allow access to the camera."
                                                                 preferredStyle:UIAlertControllerStyleAlert];
+        __weak AWCameraView *weakSelf = self;
         UIAlertAction* cancelAction = [UIAlertAction actionWithTitle:@"Try Again"
                                                                style:UIAlertActionStyleDefault
                                                              handler:^(UIAlertAction * action) {
-                                                                 [self setPosition:self.position];
+                                                                 [weakSelf setPosition:weakSelf.position];
                                                              }];
         [alert addAction:cancelAction];
 
         UIAlertAction* settingsAction = [UIAlertAction actionWithTitle:@"Settings"
                                                                  style:UIAlertActionStyleDefault
                                                                handler:^(UIAlertAction * action) {
-                                                                   [[UIApplication sharedApplication]
-                                                                    openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+                                                                   if (@available(iOS 10.0, *)) {
+                                                                       [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]
+                                                                                                          options:@{}
+                                                                                                completionHandler:nil];
+                                                                   }
+                                                                   else {
+                                                                       [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+                                                                   }
                                                                }];
         [alert addAction:settingsAction];
         
