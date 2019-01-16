@@ -1,4 +1,4 @@
-# `AWCameraView` [![Build Status](https://travis-ci.org/Aw79/AWCameraView.svg?branch=master)](https://travis-ci.org/Aw79/AWCameraView)
+# `AWCameraView` [![Build Status](https://travis-ci.org/Aw79/AWCameraView.svg?branch=master)](https://travis-ci.org/Aw79/AWCameraView) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 (fork of JBCameraView)
 
 UIView to show the camera, take a picture, preview it, return UIImage.
@@ -13,8 +13,14 @@ activate.
 
 ## Installation
 
+### Cocoapods
 ```ruby
 pod 'AWCameraView'
+```
+
+### Carthage
+```ruby
+github 'Aw79/AWCameraView'
 ```
 
 ## Usage
