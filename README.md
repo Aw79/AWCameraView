@@ -1,4 +1,6 @@
-# `AWCameraView` [![Build Status](https://travis-ci.org/Aw79/AWCameraView.svg?branch=master)](https://travis-ci.org/Aw79/AWCameraView) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+# `AWCameraView` 
+[![Build Status](https://travis-ci.org/Aw79/AWCameraView.svg?branch=master)](https://travis-ci.org/Aw79/AWCameraView) [![License](https://cocoapod-badges.herokuapp.com/l/AWCameraView/badge.svg)](https://cocoapods.org/pods/AWCameraView) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![Cocoapods](https://cocoapod-badges.herokuapp.com/v/AWCameraView/badge.png)](https://cocoapods.org/pods/AWCameraView) [![Cocoapods platforms](https://cocoapod-badges.herokuapp.com/p/AWCameraView/badge.png)](https://cocoapods.org/pods/AWCameraView)
+
 (fork of JBCameraView)
 
 UIView to show the camera, take a picture, preview it, return UIImage.
